@@ -7,7 +7,7 @@ const path = require('path');
  * 检查新项目文件并生成导航更新提醒
  */
 function checkNewProjects() {
-  const usageDir = path.join(process.cwd(), 'usage');
+  const usageDir = path.join(__dirname, '../../usage');
   const categories = ['project-interaction', 'fingerprint-browser', 'galxe', 'onchain-tools'];
   
   let newProjects = [];
@@ -34,8 +34,8 @@ function checkNewProjects() {
  * 检查导航文件中是否已包含项目链接
  */
 function checkNavigationLinks(projects) {
-  const summaryPath = path.join(process.cwd(), 'SUMMARY.md');
-  const readmePath = path.join(process.cwd(), 'README.md');
+  const summaryPath = path.join(__dirname, '../../SUMMARY.md');
+  const readmePath = path.join(__dirname, '../../README.md');
   
   let missingLinks = [];
   
@@ -125,7 +125,7 @@ function main() {
     });
     
     // 生成提醒文件
-    const reminderPath = path.join(process.cwd(), 'PROJECT_UPDATE_REMINDER.md');
+    const reminderPath = path.join(__dirname, '../../PROJECT_UPDATE_REMINDER.md');
     const reminderContent = `# 🔔 项目更新提醒
 
 **生成时间**: ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}

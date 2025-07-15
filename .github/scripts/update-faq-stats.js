@@ -7,7 +7,7 @@ const path = require('path');
  * 解析 FAQ 文件并统计问题数量
  */
 function parseFAQ() {
-  const faqPath = path.join(process.cwd(), 'faq/README.md');
+  const faqPath = path.join(__dirname, '../../faq/README.md');
   
   try {
     const content = fs.readFileSync(faqPath, 'utf8');
@@ -55,7 +55,7 @@ function parseFAQ() {
  * 更新 README.md 中的 FAQ 统计信息
  */
 function updateFAQStats(faqStats) {
-  const readmePath = path.join(process.cwd(), 'README.md');
+  const readmePath = path.join(__dirname, '../../README.md');
   
   try {
     let content = fs.readFileSync(readmePath, 'utf8');
@@ -83,7 +83,7 @@ function updateFAQStats(faqStats) {
  * 更新 index.md 中的 FAQ 统计信息
  */
 function updateIndexFAQStats(faqStats) {
-  const indexPath = path.join(process.cwd(), 'index.md');
+  const indexPath = path.join(__dirname, '../../index.md');
   
   try {
     let content = fs.readFileSync(indexPath, 'utf8');
