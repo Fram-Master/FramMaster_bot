@@ -15,6 +15,14 @@
 - 完善的技术支持体系
 - 持续更新和功能迭代
 
+## 官方渠道
+
+### 🌐 官方网站
+- **FarmMaster官网**：https://farmmaster.xyz/
+
+### 📱 社交媒体
+- **Twitter**：https://x.com/FarmMaster_bot
+
 ## 联系我们
 
 如果您有任何问题或建议，请联系我们的技术支持团队：
