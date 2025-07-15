@@ -7,7 +7,7 @@ const path = require('path');
  * 从 changelog 解析最新版本信息
  */
 function parseChangelog() {
-  const changelogPath = path.join(process.cwd(), '../../changelog/README.md');
+  const changelogPath = path.join(__dirname, '../../changelog/README.md');
   
   try {
     const content = fs.readFileSync(changelogPath, 'utf8');
@@ -17,7 +17,9 @@ function parseChangelog() {
     const versionRegex = /^## 版本 (v[\d.]+) \(([^)]+)\)$/;
     let versionInfo = null;
     let inUpdateSection = false;
+    let inPendingSection = false;
     let updates = [];
+    let pendingFixes = [];
     
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
@@ -28,32 +30,46 @@ function parseChangelog() {
         versionInfo = {
           version: versionMatch[1],
           date: versionMatch[2],
-          updates: []
+          updates: [],
+          pendingFixes: []
         };
         continue;
       }
       
-      // 如果已经找到版本信息，开始解析更新内容
+      // 如果已经找到版本信息，开始解析内容
       if (versionInfo) {
         // 检查是否进入更新内容部分
         if (line.includes('### 更新内容')) {
           inUpdateSection = true;
+          inPendingSection = false;
           continue;
         }
         
-        // 检查是否离开更新内容部分
-        if (line.startsWith('### ') && !line.includes('更新内容')) {
+        // 检查是否进入待修复功能部分
+        if (line.includes('### 待修复功能')) {
           inUpdateSection = false;
-          break;
+          inPendingSection = true;
+          continue;
         }
         
-        // 解析更新内容
-        if (inUpdateSection) {
-          // 匹配主要更新项 (1. **功能名称**：)
-          const mainUpdateMatch = line.match(/^\d+\.\s*\*\*([^*]+)\*\*[：:]?\s*(.*)$/);
-          if (mainUpdateMatch) {
-            const updateTitle = mainUpdateMatch[1];
-            const updateDesc = mainUpdateMatch[2];
+        // 检查是否离开当前部分
+        if (line.startsWith('### ') && !line.includes('更新内容') && !line.includes('待修复功能')) {
+          inUpdateSection = false;
+          inPendingSection = false;
+          
+          // 如果已经解析完更新内容和待修复功能，停止解析
+          if (line.includes('计划上线') || line.startsWith('---') || line.startsWith('##')) {
+            break;
+          }
+        }
+        
+        // 解析更新内容或待修复功能
+        if (inUpdateSection || inPendingSection) {
+          // 匹配主要项目 (1. **功能名称**：)
+          const mainItemMatch = line.match(/^\d+\.\s*\*\*([^*]+)\*\*[：:]?\s*(.*)$/);
+          if (mainItemMatch) {
+            const itemTitle = mainItemMatch[1];
+            const itemDesc = mainItemMatch[2];
             // 收集子项
             const subItems = [];
             let currentIndex = i + 1;
@@ -72,16 +88,22 @@ function parseChangelog() {
               }
             }
             
-            // 构建完整的更新描述
-            let fullUpdate = updateTitle;
-            if (updateDesc && !updateDesc.includes('：')) {
-              fullUpdate += ' - ' + updateDesc;
+            // 构建完整的描述
+            let fullItem = itemTitle;
+            if (itemDesc && !itemDesc.includes('：')) {
+              fullItem += ' - ' + itemDesc;
             }
             if (subItems.length > 0) {
-              fullUpdate += '：' + subItems.join('，');
+              fullItem += '：' + subItems.join('，');
             }
             
-            updates.push(fullUpdate);
+            // 根据当前部分添加到对应数组
+            if (inUpdateSection) {
+              updates.push(fullItem);
+            } else if (inPendingSection) {
+              pendingFixes.push(fullItem);
+            }
+            
             i = currentIndex - 1; // 跳过已处理的行
             continue;
           }
@@ -91,6 +113,7 @@ function parseChangelog() {
     
     if (versionInfo) {
       versionInfo.updates = updates;
+      versionInfo.pendingFixes = pendingFixes;
     }
     
     return versionInfo;
@@ -104,20 +127,26 @@ function parseChangelog() {
  * 更新 README.md 中的版本信息
  */
 function updateReadmeVersion(versionInfo) {
-  const readmePath = path.join(process.cwd(), '../../README.md');
+  const readmePath = path.join(__dirname, '../../README.md');
   
   try {
     let content = fs.readFileSync(readmePath, 'utf8');
     
     // 构建新的版本信息内容
-    const newVersionSection = `## 🚀 版本信息
+    let newVersionSection = `## 🚀 版本信息
 
 **当前版本**：${versionInfo.version} (${versionInfo.date})
 
 **最新更新**：
-${versionInfo.updates.map(update => `- ${update}`).join('\n')}
+${versionInfo.updates.map(update => `- ${update}`).join('\n')}`;
 
-查看详细更新内容请访问 [更新日志](changelog/README.md)。`;
+    // 如果有待修复功能，添加到版本信息中
+    if (versionInfo.pendingFixes && versionInfo.pendingFixes.length > 0) {
+      newVersionSection += `\n\n**待修复功能**：
+${versionInfo.pendingFixes.map(fix => `- ${fix}`).join('\n')}`;
+    }
+
+    newVersionSection += `\n\n查看详细更新内容请访问 [更新日志](changelog/README.md)。`;
     
     // 替换版本信息部分
     const versionRegex = /## 🚀 版本信息[\s\S]*?(?=##|$)/;
@@ -141,20 +170,26 @@ ${versionInfo.updates.map(update => `- ${update}`).join('\n')}
  * 更新 index.md 中的版本信息
  */
 function updateIndexVersion(versionInfo) {
-  const indexPath = path.join(process.cwd(), '../../index.md');
+  const indexPath = path.join(__dirname, '../../index.md');
   
   try {
     let content = fs.readFileSync(indexPath, 'utf8');
     
     // 构建新的版本信息内容
-    const newVersionSection = `## 🚀 版本信息
+    let newVersionSection = `## 🚀 版本信息
 
 **当前版本**：${versionInfo.version} (${versionInfo.date})
 
 **最新更新**：
-${versionInfo.updates.map(update => `- ${update}`).join('\n')}
+${versionInfo.updates.map(update => `- ${update}`).join('\n')}`;
 
-查看详细更新内容请访问 [更新日志](changelog/)。`;
+    // 如果有待修复功能，添加到版本信息中
+    if (versionInfo.pendingFixes && versionInfo.pendingFixes.length > 0) {
+      newVersionSection += `\n\n**待修复功能**：
+${versionInfo.pendingFixes.map(fix => `- ${fix}`).join('\n')}`;
+    }
+
+    newVersionSection += `\n\n查看详细更新内容请访问 [更新日志](changelog/)。`;
     
     // 替换版本信息部分
     const versionRegex = /## 🚀 版本信息[\s\S]*?(?=##|$)/;
