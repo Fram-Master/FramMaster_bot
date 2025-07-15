@@ -1,0 +1,49 @@
+title: FarmMaster 使用文档
+description: FarmMaster 加密货币自动化程序使用文档
+theme: minima
+
+# GitHub Pages 配置
+baseurl: ""
+url: ""
+
+# 导航菜单
+navigation:
+  - title: 主页
+    url: /
+  - title: 关于我们
+    url: /about/
+  - title: 安装配置
+    url: /installation/
+  - title: 使用教程
+    url: /usage/
+  - title: 更新日志
+    url: /changelog/
+  - title: 常见问题
+    url: /faq/
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Markdown 配置
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 包含的文件
+include:
+  - README.md
+  - SUMMARY.md
+
+# 排除的文件
+exclude:
+  - vendor
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .git
+  - .gitignore
