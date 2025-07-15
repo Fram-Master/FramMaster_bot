@@ -1,0 +1,151 @@
+name: 自动更新文档
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'changelog/README.md'
+      - 'faq/README.md'
+      - 'usage/*/**.md'
+  
+  # 允许手动触发
+  workflow_dispatch:
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: 设置 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: 检查文件变更
+      id: changes
+      run: |
+        # 检查哪些文件被修改
+        if git diff --name-only HEAD~1 HEAD | grep -q "changelog/README.md"; then
+          echo "changelog_changed=true" >> $GITHUB_OUTPUT
+        fi
+        if git diff --name-only HEAD~1 HEAD | grep -q "faq/README.md"; then
+          echo "faq_changed=true" >> $GITHUB_OUTPUT
+        fi
+        if git diff --name-only HEAD~1 HEAD | grep -q "usage/.*\.md"; then
+          echo "usage_changed=true" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: 更新版本信息
+      if: steps.changes.outputs.changelog_changed == 'true'
+      run: |
+        node .github/scripts/update-version-info.js
+    
+    - name: 检查新项目文件
+      if: steps.changes.outputs.usage_changed == 'true'
+      run: |
+        node .github/scripts/check-new-projects.js
+    
+    - name: 更新FAQ统计
+      if: steps.changes.outputs.faq_changed == 'true'
+      run: |
+        node .github/scripts/update-faq-stats.js
+    
+    - name: 提交更改
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # 检查是否有更改
+        if [ -n "$(git status --porcelain)" ]; then
+          git add .
+          git commit -m "docs: 🤖 自动更新文档内容
+          
+          - 自动同步版本信息
+          - 更新导航链接
+          - 统计更新
+          
+          由 GitHub Actions 自动生成"
+          git push
+          echo "CHANGES_MADE=true" >> $GITHUB_ENV
+        else
+          echo "CHANGES_MADE=false" >> $GITHUB_ENV
+        fi
+    
+    - name: 发送成功通知
+      if: env.CHANGES_MADE == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const { context } = require('@actions/github');
+          
+          // 创建成功通知的 issue 评论或新 issue
+          const body = `## 🤖 文档自动更新完成
+          
+          **触发分支**: ${context.ref}
+          **提交哈希**: ${context.sha.substring(0, 7)}
+          **更新时间**: ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
+          
+          ### 执行的操作
+          - ✅ 检查文档变更
+          - ✅ 更新版本信息
+          - ✅ 同步导航链接
+          - ✅ 提交更改到主分支
+          
+          ### 查看更改
+          - [查看最新提交](${context.payload.head_commit?.url || 'https://github.com/' + context.repo.owner + '/' + context.repo.repo + '/commits'})
+          - [查看文档网站](https://farmmaster.xyz)
+          
+          ---
+          *此消息由 GitHub Actions 自动生成*`;
+          
+          // 发送到仓库的 Issues
+          await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `📝 文档自动更新报告 - ${new Date().toLocaleDateString('zh-CN')}`,
+            body: body,
+            labels: ['documentation', 'automated']
+          });
+    
+    - name: 发送失败通知
+      if: failure()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const { context } = require('@actions/github');
+          
+          const body = `## ❌ 文档自动更新失败
+          
+          **触发分支**: ${context.ref}
+          **提交哈希**: ${context.sha.substring(0, 7)}
+          **失败时间**: ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
+          
+          ### 错误信息
+          请检查 [Actions 日志](${context.payload.head_commit?.url || 'https://github.com/' + context.repo.owner + '/' + context.repo.repo + '/actions'}) 了解详细错误信息。
+          
+          ### 可能的原因
+          - 文档格式不符合解析要求
+          - 权限不足
+          - 网络连接问题
+          
+          ### 解决方案
+          1. 检查最新的 changelog 格式是否正确
+          2. 手动运行工作流进行重试
+          3. 联系技术负责人处理
+          
+          ---
+          *此消息由 GitHub Actions 自动生成*`;
+          
+          await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `🚨 文档自动更新失败 - ${new Date().toLocaleDateString('zh-CN')}`,
+            body: body,
+            labels: ['documentation', 'automated', 'bug']
+          });

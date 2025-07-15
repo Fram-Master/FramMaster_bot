@@ -1,0 +1,15 @@
+{
+  "name": "farmmaster-docs-automation",
+  "version": "1.0.0",
+  "description": "FarmMaster 文档自动化脚本",
+  "main": "update-version-info.js",
+  "scripts": {
+    "update-version": "node update-version-info.js",
+    "check-projects": "node check-new-projects.js",
+    "update-faq": "node update-faq-stats.js",
+    "test": "node test-scripts.js"
+  },
+  "keywords": ["documentation", "automation", "farmmaster"],
+  "author": "FarmMaster Team",
+  "license": "MIT"
+}

@@ -34,8 +34,14 @@
 │       └── 📄 README.md
 ├── 📁 changelog/ (更新日志)
 │   └── 📄 README.md
-└── 📁 faq/ (常见问题)
-    └── 📄 README.md
+├── 📁 faq/ (常见问题)
+│   └── 📄 README.md
+└── 📁 docs/ (开发者文档)
+    └── 📁 developers/
+        ├── 📄 README.md (开发者文档中心)
+        ├── 📄 QUICK_REFERENCE.md (快速参考卡片)
+        ├── 📄 TEAM_EDITING_GUIDE.md (团队编辑指南)
+        └── 📄 AUTOMATION_GUIDE.md (自动化指南)
 ```
 
 ## 🔗 快速链接
@@ -58,6 +64,12 @@
 ### 技术支持
 - [常见问题解答](faq/README.md)
 - [更新日志](changelog/README.md)
+
+### 开发者文档
+- [开发者文档中心](docs/developers/README.md)
+- [快速参考卡片](docs/developers/QUICK_REFERENCE.md)
+- [团队编辑指南](docs/developers/TEAM_EDITING_GUIDE.md)
+- [自动化指南](docs/developers/AUTOMATION_GUIDE.md)
 
 ## 📱 多平台支持
 

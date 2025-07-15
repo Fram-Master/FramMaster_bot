@@ -2,11 +2,24 @@
 
 欢迎使用 FarmMaster 加密货币自动化程序！
 
+## 🚀 版本信息
+
+**当前版本**：v1.7.3 (2025/7/15)
+
+**最新更新**：
+- 银河（Galxe）- 修复：：恢复领取积分功能，改进打码功能，现在跑项目不用打码了，优化日志显示内容，更精确显示日志
+- 指纹浏览器 - 修复：：修复一次只能读取10个的问题
+
+查看详细更新内容请访问 [更新日志](changelog/README.md)。
+
+## 🌐 官方渠道
+
+- **官方网站**：https://farmmaster.xyz/
+- **官方Twitter**：https://x.com/FarmMaster_bot
+
 ## 📋 完整目录
 
 ### 📖 基础信息
-- **官方网站**：https://farmmaster.xyz/
-- **官方Twitter**：https://x.com/FarmMaster_bot
 - [关于我们](about/README.md) - 了解我们的团队和项目
 
 ### 🛠️ 安装配置教程
@@ -64,17 +77,6 @@
 - **银河/指纹浏览器问题**：@2号牛马在线解答
 - **安装/更新/黑屏问题**：@孤风
 
-## 📊 版本信息
-
-**当前版本**：v1.7.3 (2025/7/15)
-
-**最新更新**：
-- 银河（Galxe）功能修复和优化
-- 指纹浏览器问题修复
-- 打码功能改进
-
-查看详细更新内容请访问 [更新日志](changelog/README.md)。
-
 ## 🌐 在线文档
 
 本文档同时支持：
@@ -89,9 +91,11 @@
 
 ## 👥 团队协作
 
-### 📝 文档编辑指南
-- [📚 团队编辑指南](TEAM_EDITING_GUIDE.md) - 详细的编辑和维护流程
-- [📋 快速参考卡片](QUICK_REFERENCE.md) - 常用操作快速查询
+### 🧑‍💻 开发者文档
+- [📁 开发者文档中心](docs/developers/README.md) - 完整的开发者指南
+- [📋 快速参考卡片](docs/developers/QUICK_REFERENCE.md) - 常用操作快速查询
+- [📚 团队编辑指南](docs/developers/TEAM_EDITING_GUIDE.md) - 详细的编辑和维护流程
+- [🤖 自动化指南](docs/developers/AUTOMATION_GUIDE.md) - GitHub Actions 自动化说明
 
 ### 🎯 适用人员
 - **开发团队** - 添加新项目文档
