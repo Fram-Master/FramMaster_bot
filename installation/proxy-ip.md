@@ -78,6 +78,7 @@
 #### Webshare 购买教程 (静态IP)
 
 ![Webshare 首页](../docs/assets/images/tutorials/webshare-homepage.png)
+
 *Webshare 官方网站首页*
 
 1.  **访问官网并注册**：
@@ -85,12 +86,15 @@
     - 点击注册按钮，填写邮箱、密码等信息完成账号注册（可使用Google帐户直接登录）。
     
     ![Webshare 注册页面](../docs/assets/images/tutorials/webshare-register.png)
+
     *Webshare 注册页面*
 2.  **选择套餐并购买**：
     - 登录后，点击左侧的Proxy Server按钮，选购合适数量的代理并根据提示完成支付。
     
     ![Webshare 套餐选择](../docs/assets/images/tutorials/webshare-pricing.png)
+
     ![Webshare 套餐选择2](../docs/assets/images/tutorials/webshare-pricing2.png)
+
     *Webshare 代理套餐选择页面*
 3.  **获取代理列表**：
     - 购买成功后，通常在“My Proxies”或“Proxy List”页面可以找到您的代理列表。
@@ -98,13 +102,17 @@
     - 请确保选择支持 HTTP/SOCKS5 协议的代理。
     
     ![Webshare 代理列表](../docs/assets/images/tutorials/webshare-proxy-list.png)
+
     ![Webshare 代理列表2](../docs/assets/images/tutorials/webshare-proxy-list2.png)
+
     ![Webshare 代理列表3](../docs/assets/images/tutorials/webshare-proxy-list3.png)
+
     *Webshare 代理列表页面*
 
 #### 海外代理 购买教程 (动态IP)
 
 ![海外代理首页](../docs/assets/images/tutorials/haiwaidaili-homepage.png)
+
 *海外代理官方网站首页*
 
 1.  **访问官网并注册**：
@@ -112,11 +120,13 @@
     - 注册并登录您的账号。
     
     ![海外代理注册](../docs/assets/images/tutorials/haiwaidaili-register.png)
+
     *海外代理注册页面*
 2.  **选择动态IP套餐并购买**：
     - 点击左侧的定价，选择价格合适的套餐，点击立即购买按提示付款。（初次建议购买测试套餐，后续再根据用量进行购买）
     
     ![海外代理套餐选择](../docs/assets/images/tutorials/haiwaidaili-pricing.png)
+
     *海外代理套餐选择页面*
 3.  **配置和获取代理**：
     - 初次使用请先在个人中心 - 子帐户管理 页面创建一个子帐户：[子帐户管理-链接](https://www.haiwaidaili.net/auth_user.html)
@@ -131,6 +141,7 @@
     - **❕❕❕注意：生成格式必须设置为 hostname:port:username:password**
 
     ![海外代理获取配置](../docs/assets/images/tutorials/haiwaidaili-config.png)
+
     *海外代理配置获取页面*
 
 ---
@@ -143,13 +154,16 @@
 4. 点击“确定”完成导入，系统会自动校验格式并提示成功或失败。
 
     ![代理管理配置](../docs/assets/images/screenshots/proxy_setting.png)
+
     ![代理管理配置2](../docs/assets/images/screenshots/proxy_setting2.png)
+
     *代理管理页面*
 
 5. **测试代理连接**：
    在代理管理页面，选择代理后点击"测试连接"按钮。正常情况下会显示代理的IP地址和响应时间。如果测试失败，请按照常见问题的Q2的方法逐步排查。
 
     ![代理测试功能](../docs/assets/images/screenshots/proxy-test.png)
+
     *代理连接测试功能*
 
 **注意事项：**
