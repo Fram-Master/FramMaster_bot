@@ -82,9 +82,9 @@ jobs:
         else
           git add docs/assets/images/
           git commit -m "🖼️ 自动优化图片文件大小
-
-🤖 Generated with [Claude Code](https://claude.ai/code)
-
-Co-Authored-By: Claude <noreply@anthropic.com>"
+          
+          🤖 Generated with [Claude Code](https://claude.ai/code)
+          
+          Co-Authored-By: Claude <noreply@anthropic.com>"
           git push
         fi
