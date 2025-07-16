@@ -18,5 +18,6 @@
     * [AdsPower](usage/fingerprint-browser/adspower.md)
   * [银河交互](usage/galxe/README.md)
   * [链上工具](usage/onchain-tools/README.md)
+* [常见错误]  
 * [更新日志](changelog/README.md)
 * [常见问题](faq/README.md)
