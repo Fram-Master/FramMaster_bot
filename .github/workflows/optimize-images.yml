@@ -1,0 +1,90 @@
+name: 图片优化
+
+on:
+  push:
+    paths:
+      - 'docs/assets/images/**'
+  pull_request:
+    paths:
+      - 'docs/assets/images/**'
+
+jobs:
+  optimize-images:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: 设置 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: 安装图片优化工具
+      run: |
+        npm install -g imagemin-cli imagemin-pngquant imagemin-mozjpeg imagemin-gifsicle imagemin-svgo
+        
+    - name: 优化 PNG 图片
+      run: |
+        if [ -d "docs/assets/images" ]; then
+          find docs/assets/images -name "*.png" -type f | while read file; do
+            echo "优化: $file"
+            imagemin "$file" --plugin=pngquant --out-dir="$(dirname "$file")"
+          done
+        fi
+        
+    - name: 优化 JPG 图片
+      run: |
+        if [ -d "docs/assets/images" ]; then
+          find docs/assets/images -name "*.jpg" -o -name "*.jpeg" -type f | while read file; do
+            echo "优化: $file"
+            imagemin "$file" --plugin=mozjpeg --out-dir="$(dirname "$file")"
+          done
+        fi
+        
+    - name: 优化 SVG 图片
+      run: |
+        if [ -d "docs/assets/images" ]; then
+          find docs/assets/images -name "*.svg" -type f | while read file; do
+            echo "优化: $file"
+            imagemin "$file" --plugin=svgo --out-dir="$(dirname "$file")"
+          done
+        fi
+        
+    - name: 检查文件大小
+      run: |
+        echo "=== 图片文件大小检查 ==="
+        if [ -d "docs/assets/images" ]; then
+          find docs/assets/images -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.svg" \) -exec ls -lh {} \; | while read line; do
+            size=$(echo $line | awk '{print $5}')
+            file=$(echo $line | awk '{print $9}')
+            echo "$file: $size"
+            
+            # 检查文件是否过大
+            if [[ $file == *.png ]] && [[ $(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null) -gt 500000 ]]; then
+              echo "⚠️  警告: $file 大于 500KB，建议进一步压缩"
+            elif [[ ($file == *.jpg || $file == *.jpeg) ]] && [[ $(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null) -gt 300000 ]]; then
+              echo "⚠️  警告: $file 大于 300KB，建议进一步压缩"
+            fi
+          done
+        fi
+        
+    - name: 提交优化后的图片
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        if git diff --quiet; then
+          echo "没有图片需要优化"
+        else
+          git add docs/assets/images/
+          git commit -m "🖼️ 自动优化图片文件大小
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push
+        fi
