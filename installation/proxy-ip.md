@@ -77,52 +77,52 @@
 
 #### Webshare 购买教程 (静态IP)
 
-<img src="../docs/assets/images/tutorials/webshare-homepage.png" alt="Webshare 首页" width="70%">
+![Webshare 首页](../docs/assets/images/tutorials/webshare-homepage.png)
 *Webshare 官方网站首页*
 
 1.  **访问官网并注册**：
     - 打开 Webshare 官方网站：[https://www.webshare.io](https://www.webshare.io/?referral_code=lnui3v852b41)
     - 点击注册按钮，填写邮箱、密码等信息完成账号注册（可使用Google帐户直接登录）。
     
-    <img src="../docs/assets/images/tutorials/webshare-register.png" alt="Webshare 注册页面" width="70%">
+    ![Webshare 注册页面](../docs/assets/images/tutorials/webshare-register.png)
     *Webshare 注册页面*
 2.  **选择套餐并购买**：
     - 登录后，点击左侧的Proxy Server按钮，选购合适数量的代理并根据提示完成支付。
     
-    <img src="../docs/assets/images/tutorials/webshare-pricing.png" alt="Webshare 套餐选择" width="70%">
-    <img src="../docs/assets/images/tutorials/webshare-pricing2.png" alt="Webshare 套餐选择2" width="70%">
+    ![Webshare 套餐选择](../docs/assets/images/tutorials/webshare-pricing.png)
+    ![Webshare 套餐选择2](../docs/assets/images/tutorials/webshare-pricing2.png)
     *Webshare 代理套餐选择页面*
 3.  **获取代理列表**：
     - 购买成功后，通常在“My Proxies”或“Proxy List”页面可以找到您的代理列表。
     - 导出或复制代理信息，格式通常为 `IP:端口:用户名:密码` 或 `IP:端口:用户名:密码:协议类型`。
     - 请确保选择支持 HTTP/SOCKS5 协议的代理。
     
-    <img src="../docs/assets/images/tutorials/webshare-proxy-list.png" alt="Webshare 代理列表" width="70%">
-    <img src="../docs/assets/images/tutorials/webshare-proxy-list2.png" alt="Webshare 代理列表2" width="70%">
-    <img src="../docs/assets/images/tutorials/webshare-proxy-list3.png" alt="Webshare 代理列表3" width="70%">
+    ![Webshare 代理列表](../docs/assets/images/tutorials/webshare-proxy-list.png)
+    ![Webshare 代理列表2](../docs/assets/images/tutorials/webshare-proxy-list2.png)
+    ![Webshare 代理列表3](../docs/assets/images/tutorials/webshare-proxy-list3.png)
     *Webshare 代理列表页面*
 
 #### 海外代理 购买教程 (动态IP)
 
-<img src="../docs/assets/images/tutorials/haiwaidaili-homepage.png" alt="海外代理首页" width="70%">
+![海外代理首页](../docs/assets/images/tutorials/haiwaidaili-homepage.png)
 *海外代理官方网站首页*
 
 1.  **访问官网并注册**：
     - 打开海外代理官方网站：[https://www.haiwaidaili.net](https://www.haiwaidaili.net/register?Invitation_code=12333)
     - 注册并登录您的账号。
     
-    <img src="../docs/assets/images/tutorials/haiwaidaili-register.png" alt="海外代理注册" width="70%">
+    ![海外代理注册](../docs/assets/images/tutorials/haiwaidaili-register.png)
     *海外代理注册页面*
 2.  **选择动态IP套餐并购买**：
     - 点击左侧的定价，选择价格合适的套餐，点击立即购买按提示付款。（初次建议购买测试套餐，后续再根据用量进行购买）
     
-    <img src="../docs/assets/images/tutorials/haiwaidaili-pricing.png" alt="海外代理套餐选择" width="70%">
+    ![海外代理套餐选择](../docs/assets/images/tutorials/haiwaidaili-pricing.png)
     *海外代理套餐选择页面*
 3.  **配置和获取代理**：
     - 初次使用请先在个人中心 - 子帐户管理 页面创建一个子帐户：[子帐户管理-链接](https://www.haiwaidaili.net/auth_user.html)
     
-        <img src="../docs/assets/images/tutorials/haiwaidaili-auth_user.png" alt="子帐户管理" width="70%">
-        <img src="../docs/assets/images/tutorials/haiwaidaili-auth_user2.png" alt="子帐户管理2" width="70%">
+        ![子帐户管理](../docs/assets/images/tutorials/haiwaidaili-auth_user.png)
+        ![子帐户管理2](../docs/assets/images/tutorials/haiwaidaili-auth_user2.png)
         *子帐户管理页面*
 
     - 随后到 API提取 - 帐户认证获取 - 帐户认证获取页面。
@@ -130,7 +130,7 @@
     - 设置完毕后，先点击生成案例，再点击下载代理。
     - **❕❕❕注意：生成格式必须设置为 hostname:port:username:password**
 
-    <img src="../docs/assets/images/tutorials/haiwaidaili-config.png" alt="海外代理获取配置" width="70%">
+    ![海外代理获取配置](../docs/assets/images/tutorials/haiwaidaili-config.png)
     *海外代理配置获取页面*
 
 ---
@@ -142,14 +142,14 @@
 3. 支持批量粘贴，每行一个代理。
 4. 点击“确定”完成导入，系统会自动校验格式并提示成功或失败。
 
-    <img src="../docs/assets/images/screenshots/proxy_setting.png" alt="代理管理配置" width="70%">
-    <img src="../docs/assets/images/screenshots/proxy_setting2.png" alt="代理管理配置2" width="70%">
+    ![代理管理配置](../docs/assets/images/screenshots/proxy_setting.png)
+    ![代理管理配置2](../docs/assets/images/screenshots/proxy_setting2.png)
     *代理管理页面*
 
 5. **测试代理连接**：
    在代理管理页面，选择代理后点击"测试连接"按钮。正常情况下会显示代理的IP地址和响应时间。如果测试失败，请按照常见问题的Q2的方法逐步排查。
 
-    <img src="../docs/assets/images/screenshots/proxy-test.png" alt="代理测试功能" width="70%">
+    ![代理测试功能](../docs/assets/images/screenshots/proxy-test.png)
     *代理连接测试功能*
 
 **注意事项：**
@@ -186,7 +186,7 @@ A：关闭小火箭的代理连接后再进行尝试，如果仍然失败请按�
 **Q7：如何测试代理是否正常工作？**  
 A：在代理管理页面，选择代理后点击"测试连接"按钮。正常情况下会显示代理的IP地址和响应时间。如果测试失败，请按照Q2的方法逐步排查。
 
-<img src="../docs/assets/images/screenshots/proxy-test.png" alt="代理测试功能" width="70%">
+![代理测试功能](../docs/assets/images/screenshots/proxy-test.png)
 *代理连接测试功能*
 
 **Q8：运行脚本时报错429是什么问题？**  
