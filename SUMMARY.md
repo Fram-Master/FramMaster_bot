@@ -24,6 +24,5 @@
 * [🧰 链上工具](usage/onchain-tools/README.md)
 
 ## 📋 帮助支持
-* [🆘 常见错误](errors/README.md)
 * [❓ 常见问题](faq/README.md)
 * [📡 更新日志](changelog/README.md)

@@ -40,9 +40,8 @@
 - [👤 RPA脚本](usage/fingerprint-browser/README.md) - 浏览器自动化
 - [📊 数据管理](installation/config.md) - 配置参数说明
 
-### ❓ 常见问题与支持
-- [🆘 常见错误](errors/README.md) - 错误排查指南
-- [❓ 常见问题](faq/README.md) - FAQ解答
+### 📋 帮助支持
+- [❓ 常见问题](faq/README.md) - 问题解答和故障排除
 - [📅 更新日志](changelog/README.md) - 版本更新记录
 
 ## 🚀 快速开始
