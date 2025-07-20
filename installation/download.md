@@ -12,10 +12,11 @@
 1. 进入官网后，系统会自动识别您的操作系统
 2. 点击下载按钮，即可下载对应的系统安装包
 
+![下载软件页面](../docs/assets/images/config/download-1.png)
+
 ### 注意事项
 - 请确保从官方网站下载，避免从第三方渠道获取
-- 文件大小约为 100-200MB，请确保网络连接稳定
-- 请使用
+- 文件大小约为 200MB，请确保网络连接稳定
 
 ## 安装过程的提醒处理
 
@@ -25,8 +26,12 @@
 1. **SmartScreen 筛选器警告**
    - 点击下载文件安全提醒的 "..."
    - 选择 "保留"后会提醒‘打开前请确保信任FarmMaster...‘
-   - 选择 "继续保留“
+   - 选择 "仍然保留“
    - 正常安装即可，可无需修改默认安装盘位
+
+   ![安装软件页面](../docs/assets/images/config/download-6.png)
+
+   ![安装软件页面](../docs/assets/images/config/download-7.png)
 
 2. **Windows Defender 提醒**
    - 如果被 Windows Defender 拦截
@@ -37,8 +42,13 @@
 由于 macOS 的安全机制及证书限制，首次运行需要手动允许：
 
 1. **下载后双击安装**
+   - 将下载的 dmg 文件拖拽到 Applications 文件夹
    - 系统会弹出："未打开“FarmMaster"的风险提醒
    - 点击 "完成"
+
+   ![安装软件页面](../docs/assets/images/config/download-2.png)
+
+   ![安装软件页面](../docs/assets/images/config/download-3.png)
 
 2. **手动允许运行**
    - 打开 `系统偏好设置` → `安全性与隐私`
@@ -46,6 +56,9 @@
    - 点击 `仍要打开` 按钮
    - 输入管理员密码确认
 
+   ![安装软件页面](../docs/assets/images/config/download-4.png)
+
+   ![安装软件页面](../docs/assets/images/config/download-5.png)
 
 ### License 绑定
 1. 在登录界面的 `授权码`输入框内输入获取到的 License

@@ -21,34 +21,29 @@
 - **官方网站**：https://farmmaster.xyz/
 - **官方Twitter**：https://x.com/FarmMaster_bot
 
-## 📋 完整目录
+## 📋 快速导航
 
-### 📖 基础信息
-- [关于我们](about/README.md) - 了解我们的团队和项目
+### 📖 产品介绍
+- [🏠 产品概述](#-核心功能) - FarmMaster功能概览
+- [👥 关于我们](about/README.md) - 了解我们的团队和项目
+- [📈 产品特色](about/README.md#产品特色) - 核心优势介绍
 
-### 🛠️ 安装配置教程
-- [程序安装配置教程](installation/README.md) - 完整的安装配置指南
-  - [硬件配置推荐](installation/hardware.md)
-  - [程序下载激活](installation/download.md)
-  - [梯子下载使用](installation/proxy.md)
-  - [代理IP选购配置](installation/proxy-ip.md)
-  - [各类账号配置](installation/accounts.md)
-  - [指纹浏览器配置](installation/fingerprint.md)
-  - [打码配置](installation/captcha.md)
-  - [程序常用配置解释](installation/config.md)
+### ⚙️ 产品使用文档
+- [💻 软件安装](installation/download.md) - 程序下载与激活
+- [🔐 登录注册](installation/accounts.md) - 账号配置管理
+- [🌐 环境管理](installation/proxy.md) - 网络代理配置
+- [🖥️ 浏览器指纹管理](installation/fingerprint.md) - 指纹浏览器设置
+- [� 任务管理](usage/README.md) - 任务配置与执行
+- [🎯 项目交互](usage/project-interaction/README.md) - Web3项目自动化
+- [⭐ 银河任务](usage/galxe/README.md) - Galxe平台任务
+- [🛠️ 链上工具](usage/onchain-tools/README.md) - 区块链工具集
+- [👤 RPA脚本](usage/fingerprint-browser/README.md) - 浏览器自动化
+- [📊 数据管理](installation/config.md) - 配置参数说明
 
-### 📚 使用教程
-- [项目使用教程](usage/README.md) - 详细的功能使用指南
-  - [项目交互](usage/project-interaction/README.md) - 区块链项目自动化交互
-    - [Irys](usage/project-interaction/irys.md) - 去中心化数据存储链项目
-  - [指纹浏览器项目](usage/fingerprint-browser/README.md) - 指纹浏览器自动化管理
-    - [AdsPower](usage/fingerprint-browser/adspower.md) - AdsPower 指纹浏览器
-  - [银河交互](usage/galxe/README.md) - 银河平台任务自动化
-  - [链上工具](usage/onchain-tools/README.md) - 区块链工具集合
-
-### 📝 其他信息
-- [更新日志](changelog/README.md) - 版本更新记录和新功能
-- [常见问题](faq/README.md) - 常见问题解答 (0个问题)
+### ❓ 常见问题与支持
+- [🆘 常见错误](errors/README.md) - 错误排查指南
+- [❓ 常见问题](faq/README.md) - FAQ解答
+- [📅 更新日志](changelog/README.md) - 版本更新记录
 
 ## 🚀 快速开始
 
