@@ -26,7 +26,8 @@
 ### 📖 产品介绍
 - [🏠 产品概述](#-核心功能) - FarmMaster功能概览
 - [👥 关于我们](about/README.md) - 了解我们的团队和项目
-- [📈 产品特色](about/README.md#产品特色) - 核心优势介绍
+- [💰 定价方案](about/PRICE.md) - 查看版本和价格
+- [🔐 数据安全](about/SECURITY.md) - 安全使用指南
 
 ### ⚙️ 产品使用文档
 - [💻 软件安装](installation/download.md) - 程序下载与激活

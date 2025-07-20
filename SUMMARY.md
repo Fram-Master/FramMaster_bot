@@ -3,6 +3,7 @@
 ## 📖 产品介绍
 * [👥 关于我们](about/README.md)
 * [🏠 产品概述&文档地图](README.md)
+* [💰 定价方案](about/PRICE.md)
 * [🔐 数据安全](about/SECURITY.md)
 
 ## 🖥️ 安装配置
