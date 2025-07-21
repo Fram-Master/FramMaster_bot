@@ -18,6 +18,7 @@
 
 ## 📚 功能使用
 * [🎯 项目交互](usage/project-interaction/README.md)
+  * [🎯 支持项目](usage/project-interaction/PROJECT.md)
   * [💎 Irys项目](usage/project-interaction/irys.md)
 * [⭐ 银河交互](usage/galxe/README.md)
 * [🫆 指纹浏览器项目](usage/fingerprint-browser/README.md)
