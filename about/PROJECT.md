@@ -51,8 +51,8 @@ table td:nth-child(2) {
 | ![Monad](https://pbs.twimg.com/profile_images/1877532281419739137/I_t8rg_V_400x400.jpg) | **Monad** | ✅ 领取测试币<br>✅ Monad Score项目任务<br>✅ Aircraft投票<br>✅ Ambient项目任务<br>✅ Aproio项目任务<br>✅ Bean项目任务<br>✅ Kintsu项目任务<br>✅ Kuru项目任务<br>✅ Mace项目任务<br>✅ Magma项目任务<br>✅ Clober项目任务<br>✅ Narwhal 6个游戏任务<br>✅ Levr项目任务<br>✅ Octo项目任务<br>✅ Bubbfi项目任务<br>✅ Mudigital项目任务<br>✅ Shmonad项目任务<br>✅ Monorail项目任务<br>✅ MonAi项目任务<br>✅ Nad域名注册<br>✅ 余额查询 |
 | ![Lens MegaEth](https://pbs.twimg.com/profile_images/1861751545790070784/KvlxTzAq_400x400.jpg) | **MegaEth** | ✅ 领取测试币<br>✅ Rainmaker随机购买meme<br>✅ Rainmaker代币批量兑换ETH<br>✅ Gte随机购买meme<br>✅ Gte代币兑换Eth<br>✅ Gte添加流动性<br>✅ Gte发射代币<br>✅ 余额查询 |
 | ![Plume](https://pbs.twimg.com/profile_images/1909591493683429378/ti7DP3xE_400x400.jpg) | **Plume** | ✅ 每日任务【转盘抽奖+质押】<br>✅ Quest 1 任务-跨链<br>✅ Quest 1 任务-Pusd存款<br>✅ Quest 1 任务-Ambient任务<br>✅ Quest 1 任务-Rooster任务 |
-| ![Rise](https://pbs.twimg.com/profile_images/1909591493683429378/ti7DP3xE_400x400.jpg) | **Rise** | ✅ 领取全部测试币<br>✅ Inari存款+借款<br>✅ 每日发送Gm |
-| ![Pharos](https://pbs.twimg.com/profile_images/1909279867226779648/4qC_yL2-_400x400.jpg) | **Pharos** | ✅ 登陆邀请<br>✅ 领取测试币<br>✅ 每日签到+随机转账<br>✅ Autostarking项目任务<br>✅ 铸造Faro SBT<br>✅ OpenFi项目任务<br>✅ Zenith项目任务<br>✅ Faro项目任务<br>✅ 注册.phos域名<br>✅ 绑定社交账号<br>✅ 社交任务领取<br>✅ 余额查询<br>✅ 积分排名查询 |
+| ![Rise](https://pbs.twimg.com/profile_images/1909279867226779648/4qC_yL2-_400x400.jpg) | **Rise** | ✅ 领取全部测试币<br>✅ Inari存款+借款<br>✅ 每日发送Gm |
+| ![Pharos](https://pbs.twimg.com/profile_images/1899385457047412736/vfvmbKVj_400x400.jpg) | **Pharos** | ✅ 登陆邀请<br>✅ 领取测试币<br>✅ 每日签到+随机转账<br>✅ Autostarking项目任务<br>✅ 铸造Faro SBT<br>✅ OpenFi项目任务<br>✅ Zenith项目任务<br>✅ Faro项目任务<br>✅ 注册.phos域名<br>✅ 绑定社交账号<br>✅ 社交任务领取<br>✅ 余额查询<br>✅ 积分排名查询 |
 | ![Brahma](https://pbs.twimg.com/profile_images/1732456585652240384/u1-fAC6J_400x400.jpg) | **Brahma** | ✅ 注册AA钱包<br>✅ 铸造Brahma NFT<br>✅ AA钱包存款<br>✅ 每日GM签到<br>✅ 随机转账任务<br>✅ 查询NFT等级 |
 
 ---
