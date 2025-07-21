@@ -1,0 +1,79 @@
+/* GitBook 项目图标样式优化 */
+
+/* 统一表格中的项目图标尺寸 */
+table img {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 4px;
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* 表格第一列（图标列）居中对齐 */
+table td:first-child {
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: 50px;
+    padding: 8px;
+}
+
+/* 项目名称列样式 */
+table td:nth-child(2) {
+    font-weight: bold;
+    vertical-align: middle;
+    min-width: 120px;
+}
+
+/* 任务列表样式 */
+table td:nth-child(3) {
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+/* 表格整体样式优化 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    border: 1px solid #e1e4e8;
+    padding: 12px 8px;
+}
+
+table th {
+    background-color: #f6f8fa;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 任务列表中的换行符样式 */
+table td br {
+    line-height: 1.8;
+}
+
+/* 复选框样式 */
+table td .task-list-item {
+    list-style: none;
+    margin: 2px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    
+    table td:first-child {
+        width: 40px;
+    }
+    
+    table img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
