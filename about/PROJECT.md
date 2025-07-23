@@ -40,7 +40,7 @@ table td:nth-child(2) {
 | ![Warden](https://pbs.twimg.com/profile_images/1904848026742484992/nO3RP237_400x400.jpg) | **Warden** | ✅ 注册邀请<br>✅ 每日聊天互动<br>✅ 每日游戏<br>✅ 发射代币<br>✅ 获取邀请码<br>✅ 获取积分 |
 | ![Inco](https://pbs.twimg.com/profile_images/1909850439786659841/nfws7K_i_400x400.jpg) | **Inco** | ✅ 领取测试币<br>✅ 铸造USDC&cUSDC<br>✅ 加密&解密USD |
 | ![Nexus](https://pbs.twimg.com/profile_images/1887351274955546627/jlvN83vR_400x400.jpg) | **Nexus** | ✅ 注册绑定邮箱<br>✅ 批量注册NodeId<br>✅ 获取NodeId<br>✅ 全自动挖矿 |
-| ![Beboundless](https://pbs.twimg.com/profile_images/1917644023327498240/4Nt6GIFd_400x400.jpg) | **Beboundless** | ✅ 青铜活动-任务1【签署宣言+领取】<br>✅ 青铜活动-任务2【领取任务】<br>✅ 青铜活动-任务3【领取任务】<br>✅ 青铜活动-任务4&5【boost+vote+领取】<br>✅ 青铜活动-任务6【领取】<br>✅ 青铜活动-任务7【领取】|
+| ![Beboundless](https://pbs.twimg.com/profile_images/1917644023327498240/4Nt6GIFd_400x400.jpg) | **Beboundless** | ✅ 白银活动-任务 <br>✅ 青铜活动-任务1【签署宣言+领取】<br>✅ 青铜活动-任务2【领取任务】<br>✅ 青铜活动-任务3【领取任务】<br>✅ 青铜活动-任务4&5【boost+vote+领取】<br>✅ 青铜活动-任务6【领取】<br>✅ 青铜活动-任务7【领取】|
 | ![Lumiterra](https://pbs.twimg.com/profile_images/1667436896480563200/8YPmbLbv_400x400.png) | **Lumiterra** | ✅ 每日签到 |
 | ![Zama](https://pbs.twimg.com/profile_images/1654459351300468736/ywoKR9uZ_400x400.jpg) | **Zama** | ✅ 领取sETH测试币<br>✅ 领取Usdz测试币<br>✅ Shield 加密代币<br>✅ 查询sETH余额 |
 | ![Irys](https://pbs.twimg.com/profile_images/1879776802563891200/cdpcRzVY_400x400.jpg) | **Irys** | ✅ 领取测试币<br>✅ 每日任务-玩游戏<br>✅ 每日任务-上传文件<br>✅ Mint Okx Bitomo NFT<br>✅ 升级 Okx Bitomo NFT<br>✅ 打字游戏 |
