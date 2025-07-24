@@ -37,7 +37,7 @@ table td:nth-child(2) {
 
 | 项目图标 | 项目名称 | 已支持任务 |
 |:--------:|----------|------------|
-| ![Gata](https://pbs.twimg.com/profile_images/1917046584933814279/jRN6Y2wh_400x400.jpg) | **Gata** | ✅ 注册邀请<br>✅ 每日签到<br>✅ 每日Boost<br>✅ 挂机任务<br>✅ 自动升级领取奖励 |
+| ![Gata](https://pbs.twimg.com/profile_images/1917046584933814279/jRN6Y2wh_400x400.jpg) | **Gata** | ✅ 注册邀请<br>✅ 每日签到<br>✅ 每日Boost<br>✅ 挂机任务<br>✅ AI智能对话<br>✅ 自动升级领取奖励<br>✅ 领取聊天奖励<br>✅ 自动获取邀请码 |
 | ![Warden](https://pbs.twimg.com/profile_images/1904848026742484992/nO3RP237_400x400.jpg) | **Warden** | ✅ 注册邀请<br>✅ 每日聊天互动<br>✅ 每日游戏<br>✅ 发射代币<br>✅ 获取邀请码<br>✅ 获取积分 |
 | ![Inco](https://pbs.twimg.com/profile_images/1909850439786659841/nfws7K_i_400x400.jpg) | **Inco** | ✅ 领取测试币<br>✅ 铸造USDC&cUSDC<br>✅ 加密&解密USD |
 | ![Nexus](https://pbs.twimg.com/profile_images/1887351274955546627/jlvN83vR_400x400.jpg) | **Nexus** | ✅ 注册绑定邮箱<br>✅ 批量注册NodeId<br>✅ 获取NodeId<br>✅ 全自动挖矿 |
