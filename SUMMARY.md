@@ -21,6 +21,7 @@
 * [🎯 项目交互](usage/project-interaction/README.md)
   * [💎 Irys项目](usage/project-interaction/irys.md)
 * [⭐ 银河交互](usage/galxe/README.md)
+* [🎙️ Discord模块](usage/discord/DISCORD.md)
 * [🫆 指纹浏览器项目](usage/fingerprint-browser/README.md)
   * [AdsPower](usage/fingerprint-browser/adspower.md)
 * [🧰 链上工具](usage/onchain-tools/README.md)
