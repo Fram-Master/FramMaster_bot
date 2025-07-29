@@ -37,7 +37,7 @@ table td:nth-child(2) {
 
 | 项目图标 | 项目名称 | 已支持任务 |
 |:--------:|----------|------------|
-| ![Gata](https://pbs.twimg.com/profile_images/1917046584933814279/jRN6Y2wh_400x400.jpg) | **Gata** | ✅ 注册邀请<br>✅ 每日签到<br>✅ 每日Boost<br>✅ 挂机任务<br>✅ AI智能对话<br>✅ 自动升级领取奖励<br>✅ 领取聊天奖励<br>✅ 跨链至bnb Greenfield&opBnb<br>✅ 自动获取邀请码 |
+| ![Gata](https://pbs.twimg.com/profile_images/1917046584933814279/jRN6Y2wh_400x400.jpg) | **Gata** | ✅ 注册邀请<br>✅ 每日签到<br>✅ 每日Boost<br>✅ 挂机任务<br>✅ AI智能对话<br>✅ 自动升级领取奖励<br>✅ 领取聊天奖励<br>✅ 跨链至bnb Greenfield&opBnb<br>✅ Greenfield资金分发<br>✅ 自动获取邀请码 |
 | ![Warden](https://pbs.twimg.com/profile_images/1904848026742484992/nO3RP237_400x400.jpg) | **Warden** | ✅ 注册邀请<br>✅ 每日聊天互动<br>✅ 每日游戏<br>✅ 发射代币<br>✅ 获取邀请码<br>✅ 获取积分 |
 | ![Inco](https://pbs.twimg.com/profile_images/1909850439786659841/nfws7K_i_400x400.jpg) | **Inco** | ✅ 领取测试币<br>✅ 铸造USDC&cUSDC<br>✅ 加密&解密USD |
 | ![Nexus](https://pbs.twimg.com/profile_images/1887351274955546627/jlvN83vR_400x400.jpg) | **Nexus** | ✅ 注册绑定邮箱<br>✅ 批量注册NodeId<br>✅ 获取NodeId<br>✅ 全自动挖矿 |
@@ -53,7 +53,7 @@ table td:nth-child(2) {
 | ![Lens MegaEth](https://pbs.twimg.com/profile_images/1861751545790070784/KvlxTzAq_400x400.jpg) | **MegaEth** | ✅ 领取测试币<br>✅ Rainmaker随机购买meme<br>✅ Rainmaker代币批量兑换ETH<br>✅ Gte随机购买meme<br>✅ Gte代币兑换Eth<br>✅ Gte添加流动性<br>✅ Gte发射代币<br>✅ 余额查询 |
 | ![Plume](https://pbs.twimg.com/profile_images/1909591493683429378/ti7DP3xE_400x400.jpg) | **Plume** | ✅ 每日任务【转盘抽奖+质押】<br>✅ Quest 1 任务-跨链<br>✅ Quest 1 任务-Pusd存款<br>✅ Quest 1 任务-Ambient任务<br>✅ Quest 1 任务-Rooster任务 |
 | ![Rise](https://pbs.twimg.com/profile_images/1909279867226779648/4qC_yL2-_400x400.jpg) | **Rise** | ✅ 领取全部测试币<br>✅ Inari存款+借款<br>✅ 每日发送Gm |
-| ![Pharos](https://pbs.twimg.com/profile_images/1899385457047412736/vfvmbKVj_400x400.jpg) | **Pharos** | ✅ 登陆邀请<br>✅ 领取测试币<br>✅ 每日签到+随机转账+随机转账给社交账号<br>✅ Autostarking项目任务<br>✅ RWAfi项目交互br>✅ zentra 徽章mintbr>✅ brokex项目交互<br>✅ 铸造Faro SBT<br>✅ OpenFi项目任务<br>✅ Zenith项目任务<br>✅ Faro项目任务<br>✅ 注册.phos域名<br>✅ 绑定社交账号<br>✅ 社交任务领取<br>✅ 余额查询<br>✅ 积分排名查询 |
+| ![Pharos](https://pbs.twimg.com/profile_images/1899385457047412736/vfvmbKVj_400x400.jpg) | **Pharos** | ✅ 登陆邀请<br>✅ 领取测试币<br>✅ 每日签到+随机转账+随机转账给社交账号<br>✅ Autostarking项目任务<br>✅ RWAfi项目交互 <br>✅ zentra 徽章mint <br>✅ brokex项目交互<br>✅ 铸造Faro SBT<br>✅ OpenFi项目任务<br>✅ Zenith项目任务<br>✅ Faro项目任务<br>✅ 注册.phos域名<br>✅ 绑定社交账号<br>✅ 社交任务领取<br>✅ 余额查询<br>✅ 积分排名查询 |
 | ![Brahma](https://pbs.twimg.com/profile_images/1732456585652240384/u1-fAC6J_400x400.jpg) | **Brahma** | ✅ 注册AA钱包<br>✅ 铸造Brahma NFT<br>✅ AA钱包存款<br>✅ 每日GM签到<br>✅ 随机转账任务<br>✅ 查询NFT等级 |
 
 ---
