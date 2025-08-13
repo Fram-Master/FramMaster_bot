@@ -22,6 +22,7 @@
 - [🖥️ 浏览器指纹管理](installation/fingerprint.md) - 指纹浏览器设置
 - [� 任务管理](usage/README.md) - 任务配置与执行
 - [🎯 项目交互](usage/project-interaction/README.md) - Web3项目自动化
+- [🤖 交易机器人](usage/trading-bot/README.md) - 量化交易自动化策略
 - [⭐ 银河任务](usage/galxe/README.md) - Galxe平台任务
 - [🛠️ 链上工具](usage/onchain-tools/README.md) - 区块链工具集
 - [👤 RPA脚本](usage/fingerprint-browser/README.md) - 浏览器自动化
@@ -48,6 +49,11 @@
 - **Irys项目**：自动领水、玩游戏、上传文件、Mint NFT
 - **银河任务**：自动完成银河平台任务并领取奖励
 - **多链支持**：支持EVM、Solana等多个区块链
+
+### 交易机器人
+- **挂单对冲策略**：双交易所对冲刷量
+- **低风险套利**：自动化量化交易
+- **实时监控**：毫秒级订单执行
 
 ### 自动化工具
 - **指纹浏览器**：支持多账号管理

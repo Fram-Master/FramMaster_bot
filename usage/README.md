@@ -10,6 +10,10 @@
 - [项目交互](project-interaction/README.md) - 区块链项目自动化交互
   - [Irys](project-interaction/irys.md) - 去中心化数据存储链项目
 
+### 🤖 交易机器人
+- [交易机器人](trading-bot/README.md) - 量化交易自动化策略
+  - [挂单对冲刷量](trading-bot/HEDGING_VOLUME.md) - 双交易所对冲策略
+
 ### 🌐 指纹浏览器
 - [指纹浏览器项目](fingerprint-browser/README.md) - 指纹浏览器自动化管理
   - [AdsPower](fingerprint-browser/adspower.md) - AdsPower 指纹浏览器
@@ -38,6 +42,7 @@
 | 需求 | 推荐模块 |
 |-----|---------|
 | 区块链项目交互 | [项目交互](project-interaction/README.md) |
+| 量化交易策略 | [交易机器人](trading-bot/README.md) |
 | 多账号管理 | [指纹浏览器项目](fingerprint-browser/README.md) |
 | 银河任务自动化 | [银河交互](galxe/README.md) |
 | 交易所操作 | [链上工具](onchain-tools/README.md) |
