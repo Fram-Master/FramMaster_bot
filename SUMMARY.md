@@ -20,6 +20,8 @@
 ## 📚 功能使用
 * [🎯 项目交互](usage/project-interaction/README.md)
   * [💎 Irys项目](usage/project-interaction/irys.md)
+* [🤖 交易机器人](usage/trading-bot/README.md)
+  * [📊 挂单对冲刷量](usage/trading-bot/HEDGING_VOLUME.md)
 * [⭐ 银河交互](usage/galxe/README.md)
 * [🎙️ Discord模块](usage/discord/DISCORD.md)
 * [🫆 指纹浏览器项目](usage/fingerprint-browser/README.md)
