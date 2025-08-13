@@ -12,7 +12,7 @@
 
 ### 🤖 交易机器人
 - [交易机器人](trading-bot/README.md) - 量化交易自动化策略
-  - [挂单对冲刷量](trading-bot/HEDGING_VOLUME.md) - 双交易所对冲策略
+  - [跨所对冲刷量(挂单)](trading-bot/HEDGING_VOLUME.md) - 双交易所对冲策略
 
 ### 🌐 指纹浏览器
 - [指纹浏览器项目](fingerprint-browser/README.md) - 指纹浏览器自动化管理
