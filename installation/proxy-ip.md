@@ -70,7 +70,7 @@
 
 - Webshare: [官方网站](https://www.webshare.io/?referral_code=lnui3v852b41) (静态IP，养Twitter、Discord 账号等操作时使用)
 
-- 海外代理: [官方网站](https://www.haiwaidaili.net/register?Invitation_code=12333) (动态IP，领水时使用)
+- Dataimpulse: [官方网站](https://dataimpulse.com/?aff=189126) (动态IP，领水时使用)
 
 #### Webshare 购买教程 (静态IP)
 

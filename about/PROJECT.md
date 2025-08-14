@@ -39,7 +39,7 @@ table td:nth-child(2) {
 |:--------:|----------|------------|
 | ![Recall](https://pbs.twimg.com/profile_images/1888936241434951681/S6Q05TY0_400x400.png) | **Recall** | ✅ 邮箱注册<br>✅ 绑定钱包<br>✅ 自动完成预测任务 |
 | ![OpenMind](https://pbs.twimg.com/profile_images/1950692464597364736/5ge440-Z_400x400.jpg) | **OpenMind** | ✅ 邮箱预注册 |
-| ![SoSo Value](https://pbs.twimg.com/profile_images/1741634561090719744/DGHR3DIw_400x400.jpg) | **SoSo Value** | ✅ 注册邀请<br>✅ 每日签到<br>✅ 每日参与播客<br>✅ 一次性任务 |
+| ![SoSo Value](https://pbs.twimg.com/profile_images/1741634561090719744/DGHR3DIw_400x400.jpg) | **SoSo Value** | ✅ 注册邀请<br>✅ 日常任务<br>✅ 自动刷邀请人数<br>✅ 一次性任务 |
 | ![Pengu Clash](https://pbs.twimg.com/profile_images/1945255270029963264/7rBG9T0C_400x400.jpg) | **Pengu Clash** | ✅ 注册登陆<br>✅ 每日签到<br>✅ 每日旋转抽奖<br>✅ 每日开宝箱 |
 | ![Gata](https://pbs.twimg.com/profile_images/1917046584933814279/jRN6Y2wh_400x400.jpg) | **Gata** | ✅ 注册邀请<br>✅ 每日签到<br>✅ 每日Boost<br>✅ 挂机任务<br>✅ AI智能对话<br>✅ 自动升级领取奖励<br>✅ 领取聊天奖励<br>✅ 跨链至bnb Greenfield&opBnb<br>✅ Greenfield资金分发<br>✅ 自动获取邀请码 |
 | ![Warden](https://pbs.twimg.com/profile_images/1904848026742484992/nO3RP237_400x400.jpg) | **Warden** | ✅ 注册邀请<br>✅ 每日聊天互动<br>✅ 每日游戏<br>✅ 发射代币<br>✅ 获取邀请码<br>✅ 获取积分 |
