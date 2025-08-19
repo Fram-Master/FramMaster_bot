@@ -37,6 +37,8 @@ table td:nth-child(2) {
 
 | 项目图标 | 项目名称 | 已支持任务 |
 |:--------:|----------|------------|
+| ![inspect](https://pbs.twimg.com/profile_images/1945098664713609216/AkDymwj7_400x400.jpg) | **inspect** | ✅ 推特登陆<br>✅ 绑定钱包<br>✅ 自动加入挖矿 |
+| ![aPriori](https://pbs.twimg.com/profile_images/1821177411796410369/GtzmUXok_400x400.jpg) | **aPriori** | ✅ <br>自动绑定钱包✅ 自动完成主+绑定钱包签到<br>✅ 绑定社交账号 <br>✅ 完成6个一次性任务 |
 | ![Recall](https://pbs.twimg.com/profile_images/1888936241434951681/S6Q05TY0_400x400.png) | **Recall** | ✅ 邮箱注册<br>✅ 绑定钱包<br>✅ 自动完成预测任务 |
 | ![OpenMind](https://pbs.twimg.com/profile_images/1950692464597364736/5ge440-Z_400x400.jpg) | **OpenMind** | ✅ 邮箱预注册 |
 | ![SoSo Value](https://pbs.twimg.com/profile_images/1741634561090719744/DGHR3DIw_400x400.jpg) | **SoSo Value** | ✅ 注册邀请<br>✅ 日常任务<br>✅ 自动刷邀请人数<br>✅ 一次性任务 |
